@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+           margin-left: 20%; 
+        }
+
+        aside {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 10%;
+            height: 100vh;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        aside #logo {
+            height: 100px;
+            width: 100px;
+            margin-top: -50px;
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+            background-color: rgb(206, 197, 197);
+        }
+
+        aside .sides-container{
+            height: auto;
+            justify-content: space-around;
+        }
+
+        aside .sides-container img{
+            height: 30px;
+            width: 30px;
+            padding: 20px;
+        }
+
+        aside .sides img{
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        aside .sides img:hover{
+            background-color: #ddd;
+            cursor: pointer;
+            border-radius: 40%;
+            transition: background-color 0.8s ease;
+        }
+
+        aside .logout img{
+            width: 30px;
+            height: 30px;
+            padding: 20px;
+        }
+
+        aside .logout img:hover{
+            background-color: #ddd;
+            cursor: pointer;
+            border-radius: 40%;
+            transition: background-color 0.3s ease;
+        }
+        .container{
+            margin-left: 20%;
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            height: 80%;
+            width: 80%;
+        }
+        .container .cards-container{
+            height: 120px;
+            width: 150px;
+            display: flex;
+            background-color: #f8f9fa;
+            justify-content: center;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .container .cards-container p a{
+            margin-left: 50px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome, User!</h1>
+    </header>
+
+
+
+    <aside>
+        <img id="logo" src="../CAS-logo.png" alt="logo">
+
+        <div class="sides-container">  
+        <div class="sides">
+            <a href="">
+                <img src="../icon1.png" alt="">
+            </a>
+        </div>
+        
+        <div class="sides">
+            <a href="">
+                <img src="../icon2.png" alt="">
+            </a>
+        </div>
+        
+        <div class="sides">
+            <a href="">
+                <img src="../icon3.png" alt="">
+            </a>
+        </div>
+        </div>
+
+
+        <div class="logout">
+            <a href="../../index.html" target="_self">
+                <img src="../logout.png" alt="logout">
+            </a>
+        </div>
+       
+    </aside>
+
+    <div class="container">
+        <h3>Attendance Sheet</h3>
+        
+        <div class="cards-container">
+            <div class="cards">
+                <h3>BSIT 3A</h3>
+                <p>M-T 13:00 - 15:00</p>
+                <p><a href="">View list</a></p>
+            </div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+        </div>
+    </div>
+</body>
+</html>
